@@ -1,0 +1,15 @@
+Pepperoni	x
+Bacon
+Mushrooms	x
+Onions 		x
+Peppers		x
+Black olives	x
+Tomatoes		x
+Spinach		
+Fresh basil	x
+Arugula
+Broccoli
+Corn
+Pineapple
+
+Categories with 	x are used by the model 

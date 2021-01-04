@@ -1,0 +1,57 @@
+28/10/20
+Idea of image classification problem
+https://kapernikov.com/tutorial-image-classification-with-scikit-learn/
+
+29/10/20
+Idea
+http://pizzagan.csail.mit.edu
+Got dataset of pizza images, got idea of pizza ingredients classification
+
+31/10/20
+A first model over the pizza dataset is computed.
+13 binary classifiers are created, one for every ingredient, using HOG/SGD.
+
+xx/11/20
+Keras is discovered 
+
+Idea to turn the 13 models into one single model (multilabel classification)
+https://www.pyimagesearch.com/2018/05/07/multi-label-classification-with-keras/
+https://machinelearningmastery.com/multi-label-classification-with-deep-learning/
+The 2 main results about multilabel classification on Google are used.
+
+VGG Keras network implemented, poor results
+
+Personal CNN implemented, poor results.
+https://towardsdatascience.com/intuitively-understanding-convolutions-for-deep-learning-1f6f42faee1?gi=8d656171a4d9
+
+Transfer learning and fine-tuning discovered.
+The idea is now to find the best Keras-provided net. 
+Switched approach from Keras.sequential to Keras.functional
+
+xx/12/20
+Resnet50 is implemented, then Resnet18. Poor results probably due to a lack of personal effort.
+Personal effort obtained: InceptionV3 studied and implemented for multilabel classification.
+
+Reduced labels from 13 to 7, some ingredients almost never appear in the dataset.
+Reduced dataset from 9213 to 8045 deleting images with deleted ingredients.
+
+Train with GPU: task failed. Need to split the training in order to not overheat the Mac.
+
+Switched to imagenet weights (InceptionV3), better results.
+>50% accuracy over the dataset achieved. Good classification results obtained over personal pizza images.
+
+Streamlit UI is created. Streamlit Share account is created.
+UI creation is way easier than model training.
+
+02/01/20
+>52% accuracy obtained. Plan to train 10 epochs then stop.
+Results are good
+
+03/01/20
+pipreqs used to write requirements. Plan to put the whole on Github 
+
+
+
+
+
+
