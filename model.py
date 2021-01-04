@@ -103,7 +103,13 @@ class Model:
         ----------
         model_path : string, optional
             If provided, the model is taken from this path instead of being
-            created from zero. The default is None.
+            created from zero. This should be used to train a model splitting
+            the train in different parts. The default is None.
+        weights_path : string, optional
+            If provided, the weights for the model are taken from the path. 
+            These weights are the ones trained and should be used for
+            inference because loading weights is much cheaper than loading 
+            the whole model. The default is None.
 
         Returns
         -------

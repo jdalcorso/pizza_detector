@@ -29,7 +29,7 @@ Instructions to use this app:
 * Upload the image of a pizza (.jpg file) in the box below.
 * Wait for the app to detect its ingredients!
 
-For more details about this project please refer to www.jordy.it
+For more details about this project please refer to https://github.com/jdalcorso/pizza_detector
 """)
 
 
