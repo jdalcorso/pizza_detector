@@ -8,14 +8,13 @@ Created on Sun Dec  6 13:43:05 2020
 
 import streamlit as st
 import io
-import numpy as np
 from model import Model
 from numpy import uint8, fromstring, newaxis
 from tensorflow.keras.applications.inception_v3 import preprocess_input
 from cv2 import imdecode, resize
 
 #The model which predicts ingredients on pizzas is loaded
-pizza_detector = Model(model_path = './model') 
+pizza_detector = Model(weights_path = './weights') 
 
 #Brief introduction
 st.write("""

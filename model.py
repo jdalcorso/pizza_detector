@@ -76,7 +76,7 @@ class Model:
     INPUT_DIM = (299,299,3) #256 X 256
     OUTPUT_DIM = 7
     
-    def __init__(self, model_path = None):
+    def __init__(self, model_path = None, weights_path = None):
         """
         The Model class initzializer consists in iniztializing the model
         attribute, which is actually the model used to make predictions.
@@ -129,6 +129,10 @@ class Model:
             self.model.compile(loss='binary_crossentropy',
                                optimizer='adam', 
                                metrics = ['accuracy'])
+            
+            #Load pretrained weights
+            if weights_path is not None:
+                self.model.load_weights(weights_path)
             
             
         else:
