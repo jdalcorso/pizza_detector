@@ -43,18 +43,23 @@ Switched to imagenet weights (InceptionV3), better results.
 Streamlit UI is created. Streamlit Share account is created.
 UI creation is way easier than model training.
 
-02/01/20
+02/01/21
 >52% accuracy obtained. Plan to train 10 epochs then stop.
 Results are good
 
-03/01/20
+03/01/21
 pipreqs used to write requirements. Plan to put the whole on Github 
 
-04/01/20
-Issues on requirements and packages for deployment os streamlit share (Googled)
+04/01/21
+Issues on requirements and packages for deployment on Streamlit share (Googled)
 Can now load weights instead of the whole model (only inference instead of training)
 Deployment on streamlit share.
 
+Webapp works fine on Streamlit Share
+
+xx/02/21
+Completed documentation of the code
+Completed .pdf summary of the project
 
 
 
